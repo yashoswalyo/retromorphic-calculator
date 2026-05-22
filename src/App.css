@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&family=Press+Start+2P&family=Outfit:wght@400;500;600;700;800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Global Reset and Theme Definitions */
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+}
+
+/* ------------------------------------------------------------- */
+/* SKIN: BEIGE VINTAGE CLASSIC (IBM / MACINTOSH 1984)            */
+/* ------------------------------------------------------------- */
+.theme-beige {
+  --bg-color: #dcd7cd;
+  --bg-grid: rgba(140, 130, 115, 0.15);
+  --calc-body-bg: #e6dfd3;
+  --calc-body-border-light: #ffffff;
+  --calc-body-border-dark: #b8b1a5;
+  --calc-bezel: #d4cdbe;
+  
+  /* Screen */
+  --screen-bg: #8c9b74;
+  --screen-fg: #1d2512;
+  --screen-glow: rgba(29, 37, 18, 0.1);
+  --font-screen: 'Share Tech Mono', monospace;
+  
+  /* Solar Panel */
+  --solar-bg: #4a3e2c;
+  --solar-grid: #8a775d;
+  
+  /* Plaque */
+  --plaque-bg: #d0c7b7;
+  --plaque-fg: #50483c;
+  --plaque-border: #b8b1a5;
+
+  /* Buttons */
+  --btn-num-bg: #e8e4db;
+  --btn-num-fg: #2c251c;
+  --btn-num-border-light: #ffffff;
+  --btn-num-border-dark: #b6b0a2;
+  
+  --btn-op-bg: #cfc8ba;
+  --btn-op-fg: #2c251c;
+  --btn-op-border-light: #e8e4db;
+  --btn-op-border-dark: #9f9788;
+  
+  --btn-spec-bg: #df7738;
+  --btn-spec-fg: #ffffff;
+  --btn-spec-border-light: #f29762;
+  --btn-spec-border-dark: #a94f1c;
+
+  --btn-eq-bg: #cc3f35;
+  --btn-eq-fg: #ffffff;
+  --btn-eq-border-light: #e56b62;
+  --btn-eq-border-dark: #92221b;
+  
+  /* LEDs */
+  --led-rad: #4caf50;
+  --led-busy: #ff9800;
+  --led-error: #f44336;
+  --led-off: #5c554b;
+}
+
+/* ------------------------------------------------------------- */
+/* SKIN: RETRO CRT TERMINAL (PIP-BOY / GREEN MONOCHROME)        */
+/* ------------------------------------------------------------- */
+.theme-crt {
+  --bg-color: #0b0c0a;
+  --bg-grid: rgba(0, 255, 68, 0.05);
+  --calc-body-bg: #1d221c;
+  --calc-body-border-light: #3d473b;
+  --calc-body-border-dark: #0e120d;
+  --calc-bezel: #121511;
+
+  /* Screen */
+  --screen-bg: #030d04;
+  --screen-fg: #1aff2b;
+  --screen-glow: rgba(26, 255, 43, 0.6);
+  --font-screen: 'VT323', monospace;
+
+  /* Solar Panel */
+  --solar-bg: #10150e;
+  --solar-grid: #2e3b2a;
+
+  /* Plaque */
+  --plaque-bg: #0f120e;
+  --plaque-fg: #1aff2b;
+  --plaque-border: #3d473b;
+
+  /* Buttons */
+  --btn-num-bg: #222920;
+  --btn-num-fg: #1aff2b;
+  --btn-num-border-light: #3a4537;
+  --btn-num-border-dark: #0b0e0a;
+
+  --btn-op-bg: #171d16;
+  --btn-op-fg: #1aff2b;
+  --btn-op-border-light: #2c382a;
+  --btn-op-border-dark: #080a07;
+
+  --btn-spec-bg: #3c2010;
+  --btn-spec-fg: #ff8800;
+  --btn-spec-border-light: #5f331b;
+  --btn-spec-border-dark: #1f0f07;
+
+  --btn-eq-bg: #0a4015;
+  --btn-eq-fg: #1aff2b;
+  --btn-eq-border-light: #166e28;
+  --btn-eq-border-dark: #041f0a;
+
+  /* LEDs */
+  --led-rad: #1aff2b;
+  --led-busy: #ffb700;
+  --led-error: #ff3c3c;
+  --led-off: #162414;
+}
+
+/* ------------------------------------------------------------- */
+/* SKIN: RETRO SYNTHWAVE (NEON CYBERPUNK 1988)                 */
+/* ------------------------------------------------------------- */
+.theme-synthwave {
+  --bg-color: #120924;
+  --bg-grid: rgba(255, 0, 127, 0.15);
+  --calc-body-bg: #1c1033;
+  --calc-body-border-light: #4c2980;
+  --calc-body-border-dark: #0b0517;
+  --calc-bezel: #160c29;
+
+  /* Screen */
+  --screen-bg: #05041a;
+  --screen-fg: #00f3ff;
+  --screen-glow: rgba(0, 243, 255, 0.6);
+  --font-screen: 'Press Start 2P', monospace;
+
+  /* Solar Panel */
+  --solar-bg: #180824;
+  --solar-grid: #ff007f;
+
+  /* Plaque */
+  --plaque-bg: #0c051a;
+  --plaque-fg: #ff007f;
+  --plaque-border: #4c2980;
+
+  /* Buttons */
+  --btn-num-bg: #281745;
+  --btn-num-fg: #ffffff;
+  --btn-num-border-light: #523188;
+  --btn-num-border-dark: #120723;
+
+  --btn-op-bg: #1c1033;
+  --btn-op-fg: #ff007f;
+  --btn-op-border-light: #3d236f;
+  --btn-op-border-dark: #0b0517;
+
+  --btn-spec-bg: #7b0060;
+  --btn-spec-fg: #ffffff;
+  --btn-spec-border-light: #b0088b;
+  --btn-spec-border-dark: #400032;
+
+  --btn-eq-bg: #ff007f;
+  --btn-eq-fg: #ffffff;
+  --btn-eq-border-light: #ff66b2;
+  --btn-eq-border-dark: #99004c;
+
+  /* LEDs */
+  --led-rad: #00f3ff;
+  --led-busy: #ff007f;
+  --led-error: #ffff00;
+  --led-off: #201036;
+}
+
+/* App Desktop Container */
+.desktop-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  background-image: 
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background 0.5s ease;
+  overflow: hidden;
+}
+
+/* Neon Grid Animation for Synthwave theme */
+.theme-synthwave .desktop-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(255, 0, 127, 0.05) 50%, rgba(255, 0, 127, 0.2) 100%);
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------- */
+/* MAIN CALCULATOR HOUSING                                       */
+/* ------------------------------------------------------------- */
+.calculator-case {
+  width: 460px;
+  background-color: var(--calc-body-bg);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  z-index: 5;
+  transition: all 0.5s ease;
+  
+  /* 3D Retromorphic Outset Bevel */
+  border-top: 4px solid var(--calc-body-border-light);
+  border-left: 4px solid var(--calc-body-border-light);
+  border-right: 4px solid var(--calc-body-border-dark);
+  border-bottom: 4px solid var(--calc-body-border-dark);
+  
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.3),
+    0 20px 45px rgba(0,0,0,0.15),
+    inset 2px 2px 0 var(--calc-body-border-light),
+    inset -2px -2px 0 var(--calc-body-border-dark);
+}
+
+/* Corner Screws for industrial retro look */
+.case-screw {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--calc-body-border-dark);
+  box-shadow: 
+    inset 1px 1px 1px rgba(0,0,0,0.6), 
+    1px 1px 0 var(--calc-body-border-light);
+  z-index: 6;
+}
+.case-screw::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgba(0,0,0,0.4);
+  top: 3px;
+  left: 0;
+  transform: rotate(45deg);
+}
+.screw-tl { top: 12px; left: 12px; }
+.screw-tr { top: 12px; right: 12px; }
+.screw-bl { bottom: 12px; left: 12px; }
+.screw-br { bottom: 12px; right: 12px; }
+
+/* ------------------------------------------------------------- */
+/* TOP UTILITY PANEL: SOLAR, BRAND, CONTROLS                     */
+/* ------------------------------------------------------------- */
+.top-deck {
+  display: grid;
+  grid-template-columns: 1.4fr 1.6fr;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+/* Solar Cell Panel */
+.solar-panel {
+  height: 38px;
+  background-color: var(--solar-bg);
+  border-radius: 6px;
+  border-top: 2px solid var(--calc-body-border-dark);
+  border-left: 2px solid var(--calc-body-border-dark);
+  border-right: 2px solid var(--calc-body-border-light);
+  border-bottom: 2px solid var(--calc-body-border-light);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  padding: 2px;
+  overflow: hidden;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8);
+  position: relative;
+}
+.solar-cell {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-right: 1px solid var(--solar-grid);
+  position: relative;
+  overflow: hidden;
+}
+.solar-cell:last-child {
+  border-right: none;
+}
+.solar-panel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 60%);
+  pointer-events: none;
+}
+/* Shimmer effect when solar panel is hovered */
+.solar-panel:hover .solar-cell {
+  background-color: rgba(255, 255, 255, 0.12);
+  transition: background 0.3s ease;
+}
+
+/* Brand Plaque */
+.brand-plaque {
+  background-color: var(--plaque-bg);
+  border: 1px solid var(--plaque-border);
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 1px 1px 1px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 24px;
+}
+.brand-text {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--plaque-fg);
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.1);
+}
+.brand-subtext {
+  font-size: 6px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--plaque-fg);
+  opacity: 0.8;
+  margin-top: 1px;
+}
+
+/* ------------------------------------------------------------- */
+/* SCREEN HOUSING (LCD/CRT DISPLAY)                              */
+/* ------------------------------------------------------------- */
+.screen-bezel {
+  background-color: var(--calc-bezel);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  
+  /* Retro Inset Bevel */
+  border-top: 3px solid var(--calc-body-border-dark);
+  border-left: 3px solid var(--calc-body-border-dark);
+  border-right: 3px solid var(--calc-body-border-light);
+  border-bottom: 3px solid var(--calc-body-border-light);
+  
+  box-shadow: 
+    inset 2px 2px 4px rgba(0,0,0,0.4),
+    1px 1px 0 var(--calc-body-border-light);
+}
+
+.screen-container {
+  background-color: var(--screen-bg);
+  height: 90px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+/* CRT Screen Curve & Scanline Overlays */
+.screen-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 6px;
+}
+
+/* Glass Reflection glare */
+.screen-glare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.06) 40%, transparent 40.1%);
+  pointer-events: none;
+  z-index: 11;
+}
+
+/* CRT Scanlines and curvature */
+.theme-crt .screen-overlay {
+  background-image: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+  background-size: 100% 4px, 6px 100%;
+}
+.theme-crt .screen-container {
+  /* Subtle curved fish-eye expansion */
+  transform: scale(0.995);
+  animation: crtFlicker 0.25s infinite alternate;
+}
+
+/* Scanlines and LCD segments for others */
+.theme-beige .screen-overlay {
+  background-image: linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 100% 3px;
+}
+.theme-synthwave .screen-overlay {
+  background-image: linear-gradient(rgba(0,0,0,0.2) 2px, transparent 2px);
+  background-size: 100% 4px;
+  animation: synthScanline 8s linear infinite;
+}
+
+/* CRT and Synthwave animations */
+@keyframes crtFlicker {
+  0% { opacity: 0.985; }
+  100% { opacity: 1; }
+}
+@keyframes synthScanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+/* Screen Typography & Output layout */
+.screen-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+/* History preview or nested terms */
+.screen-expression {
+  font-family: var(--font-screen);
+  font-size: 12px;
+  color: var(--screen-fg);
+  opacity: 0.7;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+  text-shadow: 0 0 2px var(--screen-glow);
+}
+
+.theme-synthwave .screen-expression {
+  font-size: 7px; /* Press Start 2P is huge, so keep it tiny */
+}
+
+/* Active Mode Text Indicators */
+.screen-indicators {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-screen);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--screen-fg);
+}
+.theme-synthwave .screen-indicators {
+  font-size: 6px;
+}
+.indicator-active {
+  opacity: 1;
+  text-shadow: 0 0 4px var(--screen-glow);
+}
+.indicator-inactive {
+  opacity: 0.15;
+}
+
+/* Main Display Value */
+.screen-display {
+  font-family: var(--font-screen);
+  font-size: 38px;
+  color: var(--screen-fg);
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px var(--screen-glow);
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for clean vintage look */
+}
+.screen-display::-webkit-scrollbar {
+  display: none;
+}
+
+/* Adjust font size based on skin since typography sizes vary */
+.theme-crt .screen-display {
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+.theme-synthwave .screen-display {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------------- */
+/* LED LIGHTS AND BOARD CONTROLS                                 */
+/* ------------------------------------------------------------- */
+.board-interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--plaque-bg);
+  border: 1px solid var(--plaque-border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2), 1px 1px 0 rgba(255,255,255,0.1);
+}
+
+/* Status LEDs */
+.led-panel {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.led-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.led-label {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--plaque-fg);
+  text-transform: uppercase;
+}
+.led-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--led-off);
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.8), 0 1px 0px rgba(255,255,255,0.2);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Glowing States */
+.led-light.active-rad {
+  background-color: var(--led-rad);
+  box-shadow: 
+    inset 1px 1px 1px rgba(255,255,255,0.6),
+    0 0 6px var(--led-rad),
+    0 0 12px var(--led-rad);
+}
+.led-light.active-busy {
+  background-color: var(--led-busy);
+  box-shadow: 
+    inset 1px 1px 1px rgba(255,255,255,0.6),
+    0 0 6px var(--led-busy),
+    0 0 12px var(--led-busy);
+  animation: ledBlink 0.3s infinite alternate;
+}
+.led-light.active-error {
+  background-color: var(--led-error);
+  box-shadow: 
+    inset 1px 1px 1px rgba(255,255,255,0.6),
+    0 0 6px var(--led-error),
+    0 0 12px var(--led-error);
+}
+
+@keyframes ledBlink {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* Dial/Switches container */
+.toggle-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Retromorphic Sliding Switch */
+.retro-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.toggle-track {
+  width: 42px;
+  height: 20px;
+  background-color: var(--calc-bezel);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  
+  /* Inset */
+  border-top: 1.5px solid var(--calc-body-border-dark);
+  border-left: 1.5px solid var(--calc-body-border-dark);
+  border-right: 1.5px solid var(--calc-body-border-light);
+  border-bottom: 1.5px solid var(--calc-body-border-light);
+  
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+}
+.toggle-slider {
+  width: 16px;
+  height: 16px;
+  background-color: var(--btn-num-bg);
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.2s;
+  cursor: pointer;
+
+  /* Outset knob */
+  border-top: 1.5px solid var(--btn-num-border-light);
+  border-left: 1.5px solid var(--btn-num-border-light);
+  border-right: 1.5px solid var(--btn-num-border-dark);
+  border-bottom: 1.5px solid var(--btn-num-border-dark);
+  
+  box-shadow: 
+    0 1px 3px rgba(0,0,0,0.4),
+    inset 0.5px 0.5px 0 rgba(255,255,255,0.4);
+}
+.toggle-track.active .toggle-slider {
+  transform: translateX(20px);
+}
+/* Visual ridges on tactile slider */
+.toggle-slider::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  border-left: 1px solid rgba(0,0,0,0.25);
+  border-right: 1px solid rgba(0,0,0,0.25);
+  top: 3px;
+  left: 5px;
+}
+
+/* ------------------------------------------------------------- */
+/* KEYPADS SECTION AND SLIDEOUT DRAWERS                         */
+/* ------------------------------------------------------------- */
+.keypad-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Main Grid Layout */
+.keygrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+/* When scientific mode is active, reduce main grid width or let it flex */
+.scientific-drawer-open .keygrid {
+  width: 50%;
+  padding-right: 8px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Slide-out Scientific keypad drawer */
+.scientific-drawer {
+  width: 0%;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.4s;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.scientific-drawer-open .scientific-drawer {
+  width: 50%;
+  opacity: 1;
+  padding-left: 8px;
+  pointer-events: auto;
+}
+
+/* Retromorphic 3D Push Button */
+.retro-btn {
+  height: 52px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.05s, box-shadow 0.05s, border 0.05s;
+  
+  /* Text and Icon properties */
+  color: var(--btn-num-fg);
+  background-color: var(--btn-num-bg);
+  font-family: 'Outfit', sans-serif;
+  
+  /* Heavy 3D tactile borders */
+  border-top: 3px solid var(--btn-num-border-light);
+  border-left: 3px solid var(--btn-num-border-light);
+  border-right: 3px solid var(--btn-num-border-dark);
+  border-bottom: 3px solid var(--btn-num-border-dark);
+  
+  box-shadow: 
+    0 4px 0 var(--btn-num-border-dark),
+    0 5px 8px rgba(0,0,0,0.35);
+}
+
+/* Active Pressed Down State */
+.retro-btn:active, .retro-btn.keyboard-pressed {
+  transform: translateY(3px);
+  border-top: 3px solid var(--btn-num-border-dark);
+  border-left: 3px solid var(--btn-num-border-dark);
+  border-right: 3px solid var(--btn-num-border-light);
+  border-bottom: 3px solid var(--btn-num-border-light);
+  
+  box-shadow: 
+    0 1px 0 var(--btn-num-border-dark),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+    0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Operator Keys Color override */
+.btn-operator {
+  background-color: var(--btn-op-bg);
+  color: var(--btn-op-fg);
+  border-top-color: var(--btn-op-border-light);
+  border-left-color: var(--btn-op-border-light);
+  border-right-color: var(--btn-op-border-dark);
+  border-bottom-color: var(--btn-op-border-dark);
+  box-shadow: 
+    0 4px 0 var(--btn-op-border-dark),
+    0 5px 8px rgba(0,0,0,0.35);
+}
+.btn-operator:active, .btn-operator.keyboard-pressed {
+  border-top-color: var(--btn-op-border-dark);
+  border-left-color: var(--btn-op-border-dark);
+  border-right-color: var(--btn-op-border-light);
+  border-bottom-color: var(--btn-op-border-light);
+  box-shadow: 
+    0 1px 0 var(--btn-op-border-dark),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Scientific Keys Color override (same as operators or custom) */
+.btn-scientific {
+  background-color: var(--btn-op-bg);
+  color: var(--btn-op-fg);
+  border-top-color: var(--btn-op-border-light);
+  border-left-color: var(--btn-op-border-light);
+  border-right-color: var(--btn-op-border-dark);
+  border-bottom-color: var(--btn-op-border-dark);
+  box-shadow: 
+    0 4px 0 var(--btn-op-border-dark),
+    0 5px 8px rgba(0,0,0,0.3);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.btn-scientific:active, .btn-scientific.keyboard-pressed {
+  border-top-color: var(--btn-op-border-dark);
+  border-left-color: var(--btn-op-border-dark);
+  border-right-color: var(--btn-op-border-light);
+  border-bottom-color: var(--btn-op-border-light);
+  box-shadow: 
+    0 1px 0 var(--btn-op-border-dark),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Special utility buttons (AC, DEL) override */
+.btn-special {
+  background-color: var(--btn-spec-bg);
+  color: var(--btn-spec-fg);
+  border-top-color: var(--btn-spec-border-light);
+  border-left-color: var(--btn-spec-border-light);
+  border-right-color: var(--btn-spec-border-dark);
+  border-bottom-color: var(--btn-spec-border-dark);
+  box-shadow: 
+    0 4px 0 var(--btn-spec-border-dark),
+    0 5px 8px rgba(0,0,0,0.35);
+}
+.btn-special:active, .btn-special.keyboard-pressed {
+  border-top-color: var(--btn-spec-border-dark);
+  border-left-color: var(--btn-spec-border-dark);
+  border-right-color: var(--btn-spec-border-light);
+  border-bottom-color: var(--btn-spec-border-light);
+  box-shadow: 
+    0 1px 0 var(--btn-spec-border-dark),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Equal Button override */
+.btn-equal {
+  background-color: var(--btn-eq-bg);
+  color: var(--btn-eq-fg);
+  border-top-color: var(--btn-eq-border-light);
+  border-left-color: var(--btn-eq-border-light);
+  border-right-color: var(--btn-eq-border-dark);
+  border-bottom-color: var(--btn-eq-border-dark);
+  box-shadow: 
+    0 4px 0 var(--btn-eq-border-dark),
+    0 5px 8px rgba(0,0,0,0.4);
+}
+.btn-equal:active, .btn-equal.keyboard-pressed {
+  border-top-color: var(--btn-eq-border-dark);
+  border-left-color: var(--btn-eq-border-dark);
+  border-right-color: var(--btn-eq-border-light);
+  border-bottom-color: var(--btn-eq-border-light);
+  box-shadow: 
+    0 1px 0 var(--btn-eq-border-dark),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Double column button for clean grid filling */
+.span-two {
+  grid-column: span 2;
+}
+
+/* ------------------------------------------------------------- */
+/* SKIN AND SCIENTIFIC MECHANICAL SWITCHES (SIDE PANEL)         */
+/* ------------------------------------------------------------- */
+.sidebar-panel {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 4;
+}
+
+.vintage-dial-card {
+  background-color: var(--calc-body-bg);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  transition: all 0.5s ease;
+  
+  border-top: 3px solid var(--calc-body-border-light);
+  border-left: 3px solid var(--calc-body-border-light);
+  border-right: 3px solid var(--calc-body-border-dark);
+  border-bottom: 3px solid var(--calc-body-border-dark);
+  box-shadow: 
+    0 8px 20px rgba(0,0,0,0.25),
+    inset 1px 1px 0 var(--calc-body-border-light);
+}
+
+.dial-title {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--plaque-fg);
+  text-transform: uppercase;
+}
+
+/* Skin buttons that look like push-buttons on vintage cassette player */
+.skin-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.skin-push-btn {
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.15s ease;
+  
+  border-top: 2px solid rgba(255,255,255,0.4);
+  border-left: 2px solid rgba(255,255,255,0.4);
+  border-right: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 0 3px 0 rgba(0,0,0,0.4), 0 3px 5px rgba(0,0,0,0.2);
+}
+.skin-push-btn:active, .skin-push-btn.active {
+  transform: translateY(2px);
+  border-top: 2px solid rgba(0,0,0,0.4);
+  border-left: 2px solid rgba(0,0,0,0.4);
+  border-right: 2px solid rgba(255,255,255,0.3);
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.4), inset 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.btn-skin-beige { background-color: #e6dfd3; }
+.btn-skin-crt { background-color: #222920; border-color: #1aff2b; }
+.btn-skin-synthwave { background-color: #ff007f; }
+
+/* ------------------------------------------------------------- */
+/* PAPER TAPE HISTORY DRAWER (TOP SLIDING SLOT)                  */
+/* ------------------------------------------------------------- */
+.tape-slot-mount {
+  position: absolute;
+  top: -12px;
+  left: 40px;
+  right: 40px;
+  height: 16px;
+  background-color: var(--calc-bezel);
+  border-radius: 4px;
+  z-index: 3;
+  
+  border-top: 2px solid var(--calc-body-border-dark);
+  border-left: 2px solid var(--calc-body-border-dark);
+  border-right: 2px solid var(--calc-body-border-light);
+  border-bottom: 2px solid var(--calc-body-border-light);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.8);
+}
+.tape-slot-line {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  background-color: #050505;
+  border-radius: 1px;
+  box-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+
+/* Paper strip history roll */
+.history-paper-strip {
+  position: absolute;
+  bottom: calc(100% - 4px);
+  left: 56px;
+  width: 348px;
+  max-height: 240px;
+  background-color: #FAF8F2;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px, transparent 95%, rgba(255, 0, 0, 0.1) 95%);
+  background-size: 100% 20px, 100% 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  box-shadow: 
+    0 -10px 20px rgba(0,0,0,0.15),
+    -2px -5px 10px rgba(0,0,0,0.05),
+    2px -5px 10px rgba(0,0,0,0.05);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px 18px 24px 18px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  
+  /* Slide down/up transitions */
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.history-paper-strip.drawer-open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Torn serrated edge at bottom */
+.history-paper-strip::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background-image: linear-gradient(135deg, #FAF8F2 25%, transparent 25%), linear-gradient(225deg, #FAF8F2 25%, transparent 25%);
+  background-size: 10px 20px;
+  background-position: 0 0;
+  z-index: 3;
+  transform: translateY(8px);
+}
+
+.paper-inner {
+  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #383530;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.paper-line {
+  display: flex;
+  justify-content: space-between;
+  line-height: 18px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.05);
+}
+.paper-expr {
+  color: #6a6458;
+}
+.paper-res {
+  color: #12110f;
+  font-weight: 800;
+  text-align: right;
+  width: 100%;
+}
+
+.paper-rip-line {
+  border-top: 1px dashed rgba(0,0,0,0.3);
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(0,0,0,0.3);
+}
+
+/* Paper controls (floating buttons above/beside tape) */
+.paper-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+}
+.paper-btn {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: 'Courier Prime', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #555;
+  transition: all 0.2s;
+}
+.paper-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: #111;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Toggle tab to open tape drawer */
+.tape-handle-tab {
+  position: absolute;
+  top: -30px;
+  right: 50px;
+  background-color: var(--plaque-bg);
+  border: 1px solid var(--plaque-border);
+  border-bottom: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+  z-index: 4;
+  
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  
+  box-shadow: 
+    0 -3px 6px rgba(0,0,0,0.1),
+    inset 1px 1px 0 rgba(255,255,255,0.1);
+  
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--plaque-fg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.tape-handle-tab:hover {
+  filter: brightness(1.05);
+}
+
+/* Keyboard hint at the bottom */
+.keyboard-hint {
+  position: absolute;
+  bottom: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--plaque-fg);
+  opacity: 0.65;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+}
+.theme-crt .keyboard-hint {
+  color: var(--screen-fg);
+  text-shadow: 0 0 2px var(--screen-glow);
+}
+.theme-synthwave .keyboard-hint {
+  color: #ff007f;
+  text-shadow: 0 0 2px rgba(255, 0, 127, 0.4);
+}
