@@ -16,6 +16,35 @@ Welcome to the **Retromorphic Calculator (MODEL AG-1984)**. This project is buil
 
 ---
 
+## Local Development
+
+### Prerequisites
+
+- [Rust](https://www.rust-lang.org/tools/install) (stable toolchain)
+- [Bun](https://bun.sh/) (or Node.js 18+)
+- Tauri v2 system dependencies — see [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/)
+
+### Setup & Run
+
+```bash
+# Clone the repo
+git clone git@github.com:yashoswalyo/retromorphic-calculator.git
+cd retromorphic-calculator
+
+# Install frontend dependencies
+bun install
+
+# Run in development mode (launches the Tauri window with hot-reload)
+bun run tauri dev
+
+# Build a production binary
+bun run tauri build
+```
+
+The dev server starts at `http://localhost:1420` and the Tauri window opens automatically.
+
+---
+
 ## 🎨 Retromorphic Aesthetic & Design System
 
 Retromorphism marries tactile 3D skeumorphism from 70s-90s hardware (like IBM Model M keyboards, retro Macintosh computers, office printing calculators, and vintage terminals) with modern, fluid, glassmorphic interfaces and responsive micro-animations.
