@@ -57,17 +57,23 @@ We have implemented **three custom, beautiful skin modules** that completely tra
 *   **LED Indicators**: Warm colored retro filament lamps for *Busy*, *Error*, and *Radian (RAD)* active modes.
 *   **Tactile Keys**: Chunky cherry-profile mechanical keycaps with two-tone grey/beige mapping, a bright orange clear key, and a solid crimson red equal key.
 
+![IBM Classic 1984](docs/screenshots/beige.png)
+
 ### 2. Pip-Boy 3000 (Phosphor CRT Terminal)
 *   **Chassis**: Dark military textured metal alloys with mechanical rivet detailing.
 *   **Display**: Curved retro cathode-ray tube (CRT) display with high-contrast glowing green phosphor scanlines and a constant, organic phosphor refresh flicker.
 *   **LED Indicators**: High-luminescence green and amber warning filaments.
 *   **Tactile Keys**: Translucent military console buttons with glowing green labeling. Clicking them triggers a neon flash.
 
+![Pip-Boy 3000](docs/screenshots/crt.png)
+
 ### 3. Cyber Sunset 1988 (Synthwave Neon Grid)
 *   **Chassis**: Deep indigo outrun casing set against a neon pink landscape grid.
 *   **Display**: Deep black screen backlighting with glowing neon cyan vector characters.
 *   **LED Indicators**: Radiant purple and blue cyber-lamps.
 *   **Tactile Keys**: Semi-transparent dark polymer keycaps glowing with hot pink and laser cyan margins.
+
+![Cyber Sunset 1988](docs/screenshots/synthwave.png)
 
 ---
 
